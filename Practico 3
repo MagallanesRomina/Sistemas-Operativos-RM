@@ -1,0 +1,42 @@
+#!/bin/bash
+function salir{
+  exit
+} 
+function parametro{
+  man $1
+}
+parametro $1
+salir
+Esa es la 5
+#!/bin/bash
+if[ -d "$l"];then 
+      echo El parametro es un directorio 
+      exit
+elif[ -f "$l"]
+    echo El parametro es un archivo
+    exit
+elfi[ -z "$l"]
+    echo No tiene parametros 
+    exit
+fi
+Está la 1
+#!/bin/bash
+if[ -d "$l"];then 
+      echo El parametro es un directorio 
+      du -h $l
+      exit
+elif[ -f "$l"]
+    echo El parametro es un archivo
+    du -h $l
+    exit
+elfi[ -z "$l"]
+    echo No tiene parametros 
+    exit
+fi
+Esta es la dos
+#!/bin/bash
+if[ -Z "$l"]; then 
+    echo Para ejecutar el archivo se recomienda: $ ./NombreDelArchivo
+    echo Sino también: $ bash NombreDelArchivo
+    exit
+fi
